@@ -1,33 +1,30 @@
-var swiper = new Swiper(".game_slider", {
-    loop: true,
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    coverflowEffect: {
-        rotate: 0,
-        stretch: 1,
-        depth: 50,
-        modifier: 1,
-        slideShadows: false,
-    },
-    breakpoints: {
-        320: {
-            slidesPerView: 2
-        },
-        576: {
-            slidesPerView: 3
-        },
-        768: {
-            slidesPerView: 4
-        },
-        992: {
-            slidesPerView: 5
-        },
-        1200: {
-            slidesPerView: 5.5
+$(document).ready(function(){
+    $('.game_slider').owlCarousel({
+        loop:true,
+        center:true,
+        margin:-24,
+        nav:true,
+        navText: ["&#8672;", "&#8674;"],
+        dots:false,
+        responsive:{
+            0:{
+                items:2
+            },
+            576:{
+                items:3
+            },
+            768:{
+                items:4
+            },
+            992:{
+                items:5
+            },
+            1200:{
+                items:7
+            }
         }
-    },
-});
+    })
+})
 $(window).on('load', function(){
     if(typeof AOS !== 'undefined'){
         AOS.init({
