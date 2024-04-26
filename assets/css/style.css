@@ -946,6 +946,39 @@ h1,h2{
 .modal_appstoreBtn{
   background: #FF27A1;
 }
+
+#contact-form {
+  border: 2px solid black;
+  background-color: rgba(0, 0, 0, 0.7); /* Translucent dark background */
+  padding: 20px;
+  color: white; /* White text for labels and button */
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form select,
+#contact-form textarea {
+  background-color: rgba(69, 69, 69, 0.5); /* Dark tint for inputs */
+  border: 1px solid #333; /* Subtle border for inputs */
+  color: white; /* White text inside inputs */
+  width: 100%; /* Full width inputs */
+  padding: 8px; /* Padding for inputs */
+  margin-bottom: 10px; /* Space between inputs */
+}
+
+#contact-form button {
+  background-color: #444; /* Dark background for button */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: #555; /* Lighten button on hover */
+}
+
 .modal_appstoreBtn:hover{
   background: #cf2184 !important;
 }

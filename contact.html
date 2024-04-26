@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Ante - Home</title>
+
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+</head>
+
+<body>
+    <!-- ....................... start main section  ....................... -->
+    <main class="main">
+        <!-- start hero section -->
+        <section class="hero_sec">
+            <div class="hero_content">
+                <div class="container container_sm">
+                    <div class="text-center">
+                        <img class="hero_logo" src="assets/img/logo.svg" alt="logo">
+                        <h1 class="hero_title" data-aos="fade-up">Ante <br> Contact Us</h1>  
+                    </div>
+                    <section id="contact-form">
+                        <form action="submit_form.php" method="post">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" required>
+                            <br>
+                
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            <br>
+                            
+                            <label for="subject">Subject:</label>
+                            <select id="subject" name="subject">
+                                <option value="General Inquiry">General Inquiry</option>
+                                <option value="Technical Support">Technical Support</option>
+                                <option value="Billing">Billing</option>
+                                <option value="Bug Report">Bug Report</option>
+                            </select>
+                            <br>
+                            
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                            
+                            <button type="submit">Send Message</button>
+                            <br><br><br><br><br><br>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <!-- end hero section -->
+
+        
+    </main>
+
+    <!-- ....................... end main section  ....................... -->
+
+    <!-- ....................... start footer section  ....................... -->
+    <footer class="footer">
+        <div class="container container_md">
+            <!-- footer top -->
+            <div class="footer_top">
+                <div class="row gy-4 align-items-end">
+                    <div class="col-lg-3">
+                        <div class="footer_col_1">
+                            <br><br><br><br><br><br>
+                            <img class="footer_logo" src="assets/img/logo.svg" alt="">
+                            <div class="footer_col_title">Need some support? Write us!</div>
+                            <a class="footer_mailLink" href="mailto:admin@antegames.com">
+                                <img src="assets/img/mail_icon.svg" alt="" class="inline_icon">admin@antegames.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="footer_col_2">
+                            <div class="footer_col_title">Download Ante App for your platform</div>
+                            <div class="d-flex justify-content-between">
+                                <a class="footer_downloadBtn" href="#" target="_blank">
+                                    <img src="assets/img/playstore.svg" alt="">
+                                </a>
+                                <a class="footer_downloadBtn" href="#" target="_blank">
+                                    <img src="assets/img/appstore.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer_col_3">
+                            <div class="footer_col_title">Follow us on</div>
+                            <ul class="footer_socialNav">
+                                <li class="footer_socialItem">
+                                    <a class="footer_socialLink" href="#" target="_blank">
+                                        <img src="assets/img/facebook_icon.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="footer_socialItem">
+                                    <a class="footer_socialLink" href="#" target="_blank">
+                                        <img src="assets/img/instagram_icon.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="footer_socialItem">
+                                    <a class="footer_socialLink" href="#" target="_blank">
+                                        <img src="assets/img/discord_icon.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer bottom -->
+            <div class="footer_bottom">
+                <div class="row gy-4">
+                    <div class="col-lg-5">
+                        <ul class="footer_nav footer_nav_1">
+                            <li class="footer_navItem">
+                                <a class="footer_navLink" href="#">Privacy Policy</a>
+                            </li>
+                            <li class="footer_navItem">
+                                <a class="footer_navLink" href="#">Terms of Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-7">
+                        <ul class="footer_nav footer_nav_2">
+                            <li class="footer_navItem">
+                                Ante. All Rights Reserved. 2023
+                            </li>
+                            <li class="footer_navItem">
+                                No part of this app may be reproduced without our written permission
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ....................... end footer section  ....................... -->
+
+    <!-- ..... start download section ..... -->
+    <div class="modal fade download_modal" id="download_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h3 class="modal_title">Select your platform</h3>
+                    <p class="modal_desc fs_def fw-medium lh_160">Use your phone to download the app. After clicking on the button, you will be taken to the store to download the application.</p>
+                    <a class="btn rounded-pill modal_btn modal_playstoreBtn" href="#" target="_blank">
+                        <img src="assets/img/playstore_2.svg" alt="">
+                    </a>
+                    <a class="btn rounded-pill modal_btn modal_appstoreBtn" href="#" target="_blank">
+                        <img src="assets/img/appstore_2.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ..... end download section ..... -->
+
+
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
